@@ -19,4 +19,9 @@ fi
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles-repo/ --work-tree=$HOME'
 
+# maven aliases
+alias mvnw='mvn wildfly:undeploy clean package wildfly:deploy'
+alias mvnc='mvn clean'
+alias mvnp='mvn clean package'
+
 # }}}
