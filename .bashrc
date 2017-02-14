@@ -19,8 +19,9 @@ fi
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles-repo/ --work-tree=$HOME'
 
-# git aliases
+alias ss='sudo !!'
 
+# git aliases
 alias gits='git status'
 alias gita='git add'
 alias gitc='git commit'
