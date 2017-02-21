@@ -21,6 +21,9 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles-repo/ --work-tree=$HOME'
 
 alias ss='sudo !!'
 
+# password gen
+alias genpass='echo $(< /dev/urandom tr -dc \._A-Z-a-z-0-9 | head -c32)'
+
 # git aliases
 alias gits='git status'
 alias gita='git add'
