@@ -45,6 +45,13 @@ alias psqlp='psql -U postgres'
 # wildfly aliases
 alias wfl='tail -n 100 -f /opt/wildfly/standalone/log/server.log'
 
+# yum aliases
+alias yi='sudo yum install'
+alias yr='sudo yum remove'
+alias yu='sudo yum update'
+alias ys='yum search'
+alias yp='yum provides'
+
 [ -f $HOME/.local/bash_aliases ] && . $HOME/.local/bash_aliases
 
 # }}}
