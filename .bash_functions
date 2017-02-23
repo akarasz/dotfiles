@@ -23,3 +23,23 @@ function alias-add() {
     echo "$line" >> $LOCAL_ALIASES  # persist
     . $LOCAL_ALIASES
 }
+
+function sctl() {
+    local service="$1"
+
+    sudo systemctl status $service
+}
+
+function sctlon() {
+    local service="$1"
+
+    sudo systemctl start $service
+    sudo systemctl enable $service
+}
+
+function sctloff() {
+    local service="$1"
+
+    sudo systemctl stop $service
+    sudo systemctl disable $service
+}
