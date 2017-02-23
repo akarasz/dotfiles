@@ -18,18 +18,16 @@ fi
 # }}}
 # aliases {{{
 
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles-repo/ --work-tree=$HOME'
+[ -f $HOME/.local/bash_aliases ] && . $HOME/.local/bash_aliases
 
-alias ss='sudo !!'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles-repo/ --work-tree=$HOME'
+alias reload='. ~/.bash_profile'
 
 # password gen
 alias genpass='echo $(< /dev/urandom tr -dc \._A-Z-a-z-0-9 | head -c32)'
 
 # git aliases
-alias gits='git status'
-alias gita='git add'
-alias gitc='git commit'
-alias gitp='git push origin master'
+alias g='git'
 
 # maven aliases
 alias mvnw='mvn wildfly:undeploy clean package wildfly:deploy'
