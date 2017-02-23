@@ -22,11 +22,8 @@ function alias-add() {
     . $LOCAL_ALIASES
 }
 
-function sctl() {
-    local service="$1"
-
-    sudo systemctl status $service
-}
+alias sctls='sudo systemctl status'
+alias sctlr='sudo systemctl restart'
 
 function sctlon() {
     local service="$1"
