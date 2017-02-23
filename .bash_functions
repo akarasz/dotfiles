@@ -1,7 +1,5 @@
 #!/bin/bash
 
-[ -f $HOME/.local/bash_functions ] && . $HOME/.local/bash_functions
-
 function axl() {
     local host="$1"
     local username="$2"
@@ -43,3 +41,5 @@ function sctloff() {
     sudo systemctl stop $service
     sudo systemctl disable $service
 }
+
+[ -f $HOME/.local/bash_functions ] && . $HOME/.local/bash_functions

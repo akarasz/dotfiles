@@ -18,8 +18,6 @@ fi
 # }}}
 # aliases {{{
 
-[ -f $HOME/.local/bash_aliases ] && . $HOME/.local/bash_aliases
-
 alias s='sudo $(history -p !!)'
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles-repo/ --work-tree=$HOME'
@@ -46,5 +44,7 @@ alias psqlp='psql -U postgres'
 
 # wildfly aliases
 alias wfl='tail -n 100 -f /opt/wildfly/standalone/log/server.log'
+
+[ -f $HOME/.local/bash_aliases ] && . $HOME/.local/bash_aliases
 
 # }}}
