@@ -1,6 +1,7 @@
 # vim:fdm=marker
 
 [ -f /etc/bashrc ] && . /etc/bashrc
+[ -f $HOME/.bash_functions ] && . $HOME/.bash_functions
 
 # ssh-agent {{{
 
