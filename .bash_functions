@@ -6,8 +6,9 @@ function axl() {
     local password="$3"
     local xml="$4"
 
-    curl -X POST --header "content-type: text/xml" --insecure --user $username:$password --data @$xml https://$host:8443/axl/
-    echo  # to append a newline
+    curl -X POST --header "content-type: text/xml" --insecure --user $username:$password --data @$xml https://$host:8443/axl/ 2>/dev/null |  \
+        xmllint --format - |  \
+        source-highlight -s xml -f esc
 }
 
 function alias-add() {
