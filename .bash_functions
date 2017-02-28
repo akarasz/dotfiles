@@ -39,4 +39,10 @@ function sctloff() {
     sudo systemctl disable $service
 }
 
+function colors-available() {
+    for i in {0..255} ; do
+        printf "\x1b[38;5;${i}mcolour${i}\n"
+    done
+}
+
 [ -f $HOME/.local/bash_functions ] && . $HOME/.local/bash_functions
