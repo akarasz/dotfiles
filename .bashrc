@@ -55,3 +55,16 @@ alias yp='yum provides'
 [ -f $HOME/.local/bash_aliases ] && . $HOME/.local/bash_aliases
 
 # }}}
+# start tmux {{{
+
+if [ -z $TMUX ]; then  # is tmux running
+    if command -v tmux &>/dev/null; then  # is tmux installed
+        if tmux a; then  # try to reattach
+            :
+        else  # start new
+            tmux
+        fi
+    fi
+fi
+
+# }}}
