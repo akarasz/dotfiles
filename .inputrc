@@ -1,0 +1,6 @@
+# TAB cycle through completions
+"\t": menu-complete
+
+set completion-ignore-case on
+set show-all-if-ambiguous on
+set skip-completed-text on
