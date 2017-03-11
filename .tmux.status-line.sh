@@ -6,6 +6,8 @@ mem_used=$(expr $mem_total - $mem_available)
 
 mem=$(expr $mem_used \* 100 / $mem_total)
 
+load=$(cat /proc/loadavg | cut -d ' ' -f 1-3)
+
 print_percent() {
     local data="$1"
 
@@ -24,4 +26,5 @@ print_percent() {
     printf "$color%2d%%$white" $data
 }
 
-echo -e "M $(print_percent $mem) #[fg=cyan]|#[fg=white] D $(print_percent $disk)"
+echo -e "#[fg=white]L $load #[fg=cyan]|#[fg=white] M  $(print_percent $mem) #[fg=cyan]|#[fg=white] D $(print_percent $disk)"
+
