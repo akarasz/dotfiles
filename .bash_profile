@@ -3,8 +3,10 @@
 [ -f ~/.profile ] && . ~/.profile
 
 FUNCTIONS_DIR=~/functions
-for file in $FUNCTIONS_DIR/*; do
-    . $file
-done
+if [ -d $FUNCTIONS_DIR ]; then
+    for file in $FUNCTIONS_DIR/*; do
+        . $file
+    done
+fi
 
 [ -f ~/.bashrc ] && . ~/.bashrc
