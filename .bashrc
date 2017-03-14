@@ -15,6 +15,11 @@ if [ -f ~/.ssh/id_rsa ]; then
 fi
 
 # }}}
+# ssh session handler
+
+[ -f $HOME/.ssh/sessions/manage.sh ] && $HOME/.ssh/sessions/manage.sh &
+
+# }}}
 # start tmux {{{
 
 if [ -z $TMUX ]; then  # is tmux running
