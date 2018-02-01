@@ -26,5 +26,5 @@ print_percent() {
     printf "$color%2d%%$white" $data
 }
 
-echo -e "#[fg=white]L $load #[fg=cyan]|#[fg=white] M  $(print_percent $mem) #[fg=cyan]|#[fg=white] D $(print_percent $disk)"
+echo -e "#[fg=white]L $load #[fg=cyan]|#[fg=white] M $(print_percent $mem) #[fg=cyan]|#[fg=white] D $(print_percent $disk)"
 
