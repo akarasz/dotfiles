@@ -18,4 +18,4 @@ export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM="auto"
 
-PS1='\[\e[1m\]\u@\h\[\e(B\e[m\] \W\[\033[0;37m\]$(__git_ps1)\[\033[0m\] \[\e[1m\]\$\[\e(B\e[m\] '
+PS1='\[\e[1m\]>\[\e(B\e[m\] \W\[\033[0;37m\]$(__git_ps1)\[\033[0m\] \[\e[1m\]\$\[\e(B\e[m\] '
