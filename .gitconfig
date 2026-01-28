@@ -8,3 +8,5 @@
 [user]
 	email = karaszandris@gmail.com
 	name = Andras Karasz
+[alias]
+	ca = commit -a -m
