@@ -10,3 +10,4 @@
 	name = Andras Karasz
 [alias]
 	ca = commit -a -m
+	c = commit -m
