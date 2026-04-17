@@ -11,3 +11,5 @@
 [alias]
 	ca = commit -a -m
 	c = commit -m
+[init]
+	defaultBranch = main
