@@ -13,3 +13,5 @@
 	c = commit -m
 [init]
 	defaultBranch = main
+[push]
+	autoSetupRemote = true
