@@ -11,6 +11,7 @@
 [alias]
 	ca = commit -a -m
 	c = commit -m
+	stat = diff --stat
 [init]
 	defaultBranch = main
 [push]

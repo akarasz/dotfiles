@@ -22,3 +22,4 @@ PS1='\[\e[1m\]>\[\e(B\e[m\] \[\e[0;36m\]\W\[\e[0;37m\]$(__git_ps1)\[\e[0m\] \[\e
 
 export ANDROID_HOME=/opt/android-sdk
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export PATH="$HOME/.local/bin:$PATH"
